@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route, 
+  Redirect,
+} from "react-router-dom";
+import Login from './pages/login/login';
+import Signup from './pages/login/signup';
+import { createGlobalStyle } from 'styled-components';
+import { StyledApp } from './styles';
+
+const GlobalStyle = createGlobalStyle`{
+  body {
+    background-color: #f5f5f5 ;
+    padding-top: 90px;
+}`;
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   return (
+    <>
+      <GlobalStyle />
+        <Router>
+          <React.StrictMode>
+            <StyledApp>
+              <Switch>
+                <Route path="/signin" component={Login} />
+                <Route path="/signup" component={Signup} />
+                <Redirect from="/" to="/signin" />
+              </Switch>
+            </StyledApp>
+          </React.StrictMode>
+        </Router>
+    </>
   );
 }
 
