@@ -8,7 +8,7 @@ const Login = () => {
   return (
     <>
       <Account
-        header="Welcome Back"
+        header="Welcome Back!"
         subHeader="Log in to continue"
         formType= {<LoginForm />}
         linkText="Don't have an account?"

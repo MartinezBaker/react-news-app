@@ -11,13 +11,6 @@ const Account = (props) => {
         {props.formType}
         <LinkDiv>{props.linkText} {props.link}</LinkDiv>
       </LoginDiv>
-      <ImgDiv>
-        <img
-          style={{ width: "650px", borderRadius: "0 20px 20px 0" }}
-          src={loginImage}
-          alt="Login"
-        />
-      </ImgDiv>
     </FlexDiv>
   );
 };

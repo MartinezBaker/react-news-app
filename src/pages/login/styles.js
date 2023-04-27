@@ -28,6 +28,8 @@ export const StyledInput = styled.input`
     border-radius: 10px;
     border: none;
     background-color: #ddd;
+    &:focus {
+        outline: none;
 `;
 
 export const LoginDiv = styled.div`
@@ -42,7 +44,7 @@ export const StyledButton = styled.button`
   border-radius: 10px;
   margin: 30px 0;
   &:hover {
-    background-color: #0000ff;
+    background-color: #0080fe;
     cursor: pointer;
     color: white;
   }
@@ -65,4 +67,5 @@ export const StyledLabel = styled.label`
 export const LinkDiv = styled.div`
     text-align: center;
     margin-top: 20px;
+    font-weight: bold;
 `;
