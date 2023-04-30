@@ -51,10 +51,6 @@ export const StyledButton = styled.button`
   border: none;
 `;
 
-export const ImgDiv = styled.div`
-    width: 50%;
-`;
-
 export const StyledForm = styled.form`
     width: 80%;
     margin: 0 auto;

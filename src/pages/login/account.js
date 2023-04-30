@@ -1,6 +1,5 @@
 import React from "react";
-import { FlexDiv, StyledText, StyledHeader, LoginDiv, ImgDiv, LinkDiv } from "./styles";
-import loginImage from '../../assets/images/loginImage.jpg'
+import { FlexDiv, StyledText, StyledHeader, LoginDiv, LinkDiv } from "./styles";
 
 const Account = (props) => {
   return (

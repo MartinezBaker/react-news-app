@@ -1,10 +1,9 @@
 import React from "react";
-import { useLocation, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Account from "./account";
 import { SignupForm } from "./account-components/form";
 
 const Signup = () => {
-  const location = useLocation();
   return (
     <>
       <Account
